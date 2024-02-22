@@ -2,6 +2,12 @@ import pathlib
 import pickle
 import numpy as np
 import os.path as osp
+import sys
+from pathlib import Path
+
+# Assuming this script is in the root directory of your project
+root_dir = '/workspace/git/SA-SSD'
+sys.path.append(str(root_dir))
 from mmdet.core.bbox3d.geometry import remove_outside_points, points_in_rbbox, box_camera_to_lidar
 import tools.kitti_common as kitti
 from tqdm import tqdm as prog_bar
@@ -271,9 +277,9 @@ def create_groundtruth_database(data_path,
 
 
 if __name__ == '__main__':
-    create_kitti_info_file('/home/billyhe/data/KITTI')
-    create_reduced_point_cloud('/home/billyhe/data/KITTI')
+    create_kitti_info_file('/workspace/git/SA-SSD/data')
+    create_reduced_point_cloud('/workspace/git/SA-SSD/data')
 
-    create_groundtruth_database(data_path='/home/billyhe/data/KITTI', \
-                                info_path='/home/billyhe/data/KITTI/kitti_infos_trainval.pkl', \
-                                db_info_save_path='/home/billyhe/data/KITTI/kitti_dbinfos_trainval.pkl')
+    create_groundtruth_database(data_path='/workspace/git/SA-SSD/data', \
+                                info_path='/workspace/git/SA-SSD/data/kitti_infos_trainval.pkl', \
+                                db_info_save_path='/workspace/git/SA-SSD/data/kitti_dbinfos_trainval.pkl')

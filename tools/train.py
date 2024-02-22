@@ -1,7 +1,7 @@
 from __future__ import division
 import argparse
 import sys
-sys.path.append('/home/billyhe/SA-SSD')
+sys.path.append('/workspace/git/SA-SSD')
 from mmcv.parallel import MMDataParallel, MMDistributedDataParallel
 from mmdet.datasets import build_dataloader
 from tools.env import get_root_logger, init_dist, set_random_seed
@@ -23,7 +23,7 @@ def parse_args():
     parser.add_argument(
         '--gpus',
         type=int,
-        default=1,
+        default=2,
         help='number of gpus to use '
              '(only applicable to non-distributed training)')
     parser.add_argument('--seed', type=int, default=0, help='random seed')

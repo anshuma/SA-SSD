@@ -1,0 +1,337 @@
+    1  cd workspace/
+    2  ls
+    3  unzip SA_SSD_code_createdata_woutdata.zip 
+    4  apt-get update
+    5  apt-get install zip
+    6  unzip SA_SSD_code_createdata_woutdata.zip 
+    7  ls
+    8  unzip data.zip 
+    9  ls
+   10  unzip testing.zip 
+   11  ls
+   12  unzip training.zip 
+   13  ls
+   14  cd SA-SSD/
+   15  mv ../data .
+   16  ls
+   17  mv ../testing data/.
+   18  mv ../training data/.
+   19  ls
+   20  vim test.py
+   21  apt-get update 
+   22  apt-get install vim
+   23  vim test1.py
+   24  python3 test1
+   25  python3 test1.py 
+   26  python3 -version
+   27  python3 --version
+   28  pip install torch==1.7.0
+   29  pip show torchvision
+   30  pip install torchvision==1.6.0
+   31  ls
+   32  vim python_deps.txt 
+   33  pip install torchvision==0.1.6
+   34  vim python_deps.txt 
+   35  pip install spconv-cu118
+   36  nvcc --version
+   37  pip show torchvision
+   38  pip3 install openmim
+   39  mim install "mmcv < 2.0.0"
+   40  ls
+   41  cd mmdet/ops/points_op
+   42  python3 setup.py build_ext --inplace
+   43  cd ..
+   44  ls
+   45  cd ops/
+   46  ls
+   47  cd iou3d/
+   48  python3 setup.py build_ext --inplace
+   49  cd ..
+   50  ls
+   51  cd pointnet2/
+   52  python3 setup.py build_ext --inplace
+   53  cd ..
+   54  ls
+   55  cd ..
+   56  export NUMBAPRO_CUDA_DRIVER=/usr/lib/x86_64-linux-gnu/libcuda.so
+   57  export NUMBAPRO_NVVM=/usr/local/cuda/nvvm/lib64/libnvvm.so
+   58  export NUMBAPRO_LIBDEVICE=/usr/local/cuda/nvvm/libdevice
+   59  export LD_LIBRARY_PATH=/home/billyhe/anaconda3/lib/python3.7/site-packages/spconv
+   60  python3 tools/create_data.py
+   61  pip install numba
+   62  python -m pip install --upgrade pip
+   63  python3 tools/create_data.py
+   64  pip install matplotlib
+   65  python3 tools/create_data.py
+   66  pip install pycocotools
+   67  python3 tools/create_data.py
+   68  ulimit -n 4096
+   69  python3 tools/create_data.py
+   70  pip install terminaltables
+   71  python3 tools/create_data.py
+   72  vim python_deps.txt 
+   73  pip install scikit-image
+   74  python3 tools/create_data.py
+   75  find . -name 000000.bin
+   76  vim tools/create_data.py
+   77  vim /workspace/SA-SSD/tools/kitti_common.py
+   78  vim tools/create_data.py
+   79  python tools/create_data.py 
+   80  ls
+   81  cd tools/
+   82  python3 train.py ../configs/car_cfg.py
+   83  cd ..
+   84  ls
+   85  find . -name train.py
+   86  cd ./mmdet/apis/train.py
+   87  cd ./mmdet/apis/
+   88  python3 train.py ../configs/car_cfg.py
+   89  cd ..
+   90  cd tools/
+   91  ls
+   92  vim train.py 
+   93  pwd
+   94  vim train.py 
+   95  python3 train.py ../configs/car_cfg.py
+   96  vim /workspace/SA-SSD/mmdet/models/necks/cmn.py
+   97  python3 train.py ../configs/car_cfg.py
+   98  vim /workspace/SA-SSD/mmdet/models/necks/cmn.py
+   99  python3 train.py ../configs/car_cfg.py
+  100  vim /workspace/SA-SSD/mmdet/models/necks/cmn.py
+  101  python3 train.py ../configs/car_cfg.py
+  102  vim /workspace/SA-SSD/mmdet/models/necks/cmn.py
+  103  python3 train.py ../configs/car_cfg.py
+  104  vim /workspace/SA-SSD/mmdet/models/necks/cmn.py
+  105  python3 train.py ../configs/car_cfg.py
+  106  vim /workspace/SA-SSD/mmdet/models/necks/cmn.py
+  107  python3 train.py ../configs/car_cfg.py
+  108  vim /workspace/SA-SSD/mmdet/models/necks/cmn.py
+  109  python3 train.py ../configs/car_cfg.py
+  110  vim /workspace/SA-SSD/mmdet/models/necks/cmn.py
+  111  python3 train.py ../configs/car_cfg.pyA
+  112  python3 train.py ../configs/car_cfg.py
+  113  pwd
+  114  find . -name kitti_dbinfos_train.pkl
+  115  find /workspace/SA-SSD/ -name kitti_dbinfos_train.pkl
+  116  cd ..
+  117  find . -name kitti_dbinfos_train.pkl
+  118  ls
+  119  grep -rn _train.pkl ./* > res1
+  120  ls
+  121  vim res1 
+  122  grep -rn "_train.pkl" ./* >res1
+  123  grep -rn "_train.pkl" mmdet/* >res1
+  124  vim res1 
+  125  grep -rn "_train.pkl" tools/* >res1
+  126  vim res1 
+  127  ls data/
+  128  vim res1 
+  129  vim tools/create_data.py
+  130  python3 tools/create_data.py
+  131  cp data/kitti_dbinfos_trainval.pkl data/kitti_dbinfos_train.pkl
+  132  history
+  133  cp -r kitti_dbinfos_train.pkl ./* 
+  134  grep -rn "kitti_dbinfos_train.pkl" ./* 
+  135  pwf
+  136  pwd
+  137  cd tools/
+  138  vim train.
+  139  vim train.py 
+  140  python3 train.py ../configs/car_cfg.py
+  141  vim train.py 
+  142  vim /workspace/SA-SSD/mmdet/core/point_cloud/point_augmentor.py
+  143  grep -rn billyhe ./*
+  144  vim ./configs/car_cfg.py
+  145  pwd
+  146  vim ./configs/car_cfg.py
+  147  python3 train.py ../configs/car_cfg.py
+  148  cd ..
+  149  grep -rn billyhe ./*
+  150  vim ./configs/car_cfg.py
+  151  pwd
+  152  vim ./configs/car_cfg.py
+  153  cd tools/
+  154  python3 train.py ../configs/car_cfg.py
+  155  vim /workspace/SA-SSD/mmdet/apis/train.py
+  156  vim train.py
+  157  vim train.
+  158  vim train.py 
+  159  vim /workspace/SA-SSD/mmdet/apis/train.py
+  160  vim train.py 
+  161  vim ../configs/car_cfg.py 
+  162  python3 train.py ../configs/car_cfg.py
+  163  vim ../configs/car_cfg.py 
+  164  python3 train.py ../configs/car_cfg.py
+  165  vim /workspace/SA-SSD/configs/car_cfg.py
+  166  python3 train.py ../configs/car_cfg.py
+  167  vim /workspace/SA-SSD/configs/car_cfg.py
+  168  python3 train.py ../configs/car_cfg.py
+  169  cd workspace/
+  170  ls
+  171  cd SA-SSD/
+  172  ls
+  173  python3 train.py ../configs/car_cfg.py
+  174  cd tools/
+  175  python3 train.py ../configs/car_cfg.py
+  176  ulimit -n 4096
+  177  python3 train.py ../configs/car_cfg.py
+  178  vim ../configs/car_cfg.py 
+  179  vim /workspace/SA-SSD/mmdet/apis/train.py
+  180  vim ../configs/car_cfg.py 
+  181  python3 train.py ../configs/car_cfg.py
+  182  vim /workspace/SA-SSD/configs/car_cfg.py
+  183  python3 train.py ../configs/car_cfg.py
+  184  vim /workspace/SA-SSD/configs/car_cfg.py
+  185  python3 train.py ../configs/car_cfg.py
+  186  vim /workspace/SA-SSD/mmdet/apis/train.py
+  187  vim ../configs/car_cfg.py 
+  188  vim train.py
+  189  cd ..
+  190  mkdir git 
+  191  cd git
+  192  apt install git
+  193  ssh-keygen -t ed25519 -C "anshuma.shukla@gmail.com"
+  194  cat /root/.ssh/id_ed25519.pub
+  195  git clone git@github.com:skyhehe123/SA-SSD.git
+  196  rmm -rf SA-SSD/
+  197  rm -rf SA-SSD/
+  198  git clone git@github.com:anshuma/SA-SSD.git
+  199  git checkout -b anshuma/MCA
+  200  cd SA-SSD/
+  201  git checkout -b anshuma/MCA
+  202  diff -r mmdet/* ../../SA-SSD/mmdet/*
+  203  diff -r mmdet/models/ ../../SA-SSD/mmdet/models/
+  204  :q
+  205  git cherry-pick 69cbcb8092367a1d21b236fd8e0ebf5d9728623c
+  206  cd ..
+  207  cd SA-SSD/
+  208  find . -name mmdet/core/bbox3d/geometry.py
+  209  ls
+  210  cd ..
+  211  du -sh *
+  212  cd ..
+  213  du -sh *
+  214  cp SA-SSD/mmdet/core/bbox3d/geometry.py git/SA-SSD/mmdet/core/bbox3d/geometry.py
+  215  mv SA-SSD/data git/SA-SSD/.
+  216  ls
+  217  cd git/SA-SSD/
+  218  ls
+  219  python3 tools/create_data.py
+  220  vim tools/create_data.py 
+  221  python3 tools/create_data.py
+  222  vim tools/create_data.py 
+  223  python3 tools/create_data.py
+  224  ls
+  225  vim tools/create_data.py 
+  226  python3 tools/create_data.py
+  227  cd cd mmdet/ops/points_op
+  228  cd mmdet/ops/points_op c
+  229  python3 setup.py build_ext --inplace
+  230  python3 setup.py build_ext --inplace > res1
+  231  vim /workspace/git/SA-SSD/mmdet/ops/points_op/src/points_op.cpp
+  232  python3 setup.py build_ext --inplace
+  233  cd .
+  234  cd ..
+  235  ls
+  236  cd iou3d/
+  237  python3 setup.py build_ext --inplace
+  238  vim /workspace/git/SA-SSD/mmdet/ops/iou3d/src/iou3d.cpp
+  239  python3 setup.py build_ext --inplace
+  240  cd ..
+  241  ls
+  242  cd pointnet2/
+  243  python3 setup.py build_ext --inplace
+  244  diff -r /workspace/git/SA-SSD/mmdet/ops/pointnet2/* /workspace/SA-SSD/mmdet/ops/pointnet2/*
+  245  diff -r /workspace/git/SA-SSD/mmdet/ops/pointnet2/src/* /workspace/SA-SSD/mmdet/ops/pointnet2/src/*
+  246  diff -r /workspace/git/SA-SSD/mmdet/ops/pointnet2/src/interpolate.cpp /workspace/SA-SSD/mmdet/ops/pointnet2/src/interpolate.cpp 
+  247  vim src/interpolate.cpp 
+  248  python3 setup.py build_ext --inplace
+  249  cd ...
+  250  cd ..
+  251  cd ../..
+  252  python3 tools/create_data.py
+  253  vim /workspace/git/SA-SSD/tools/kitti_common.py 
+  254  python3 tools/create_data.py
+  255  cd workspace/git/SA-SSD/
+  256  /workspace/git/SA-SSD/tools/kitti_common.py
+  257  python3 tools/create_data.py
+  258  ulimit -n 4096
+  259  python3 tools/create_data.py
+  260  ls
+  261  cd tools/
+  262  python3 train.py ../configs/car_cfg.py
+  263  vim train.py 
+  264  python3 train.py ../configs/car_cfg.py
+  265  diff -r /workspace/git/SA-SSD/mmdet/models/necks/cmn.py /workspace/SA-SSD/mmdet/models/necks/cmn.py
+  266  vim train.py 
+  267  vim /workspace/git/SA-SSD/mmdet/models/necks/cmn.py 
+  268  python3 train.py ../configs/car_cfg.py
+  269  grep -rn kitti_dbinfos_train ./*
+  270  vim ./create_data.py
+  271  vim train.py 
+  272  grep -rn billyhe ./*
+  273  cd ..
+  274  grep -rn billyhe ./*
+  275  vim ./configs/car_cfg.py
+  276  python3 train.py ../configs/car_cfg.py
+  277  cd tools/
+  278  python3 train.py ../configs/car_cfg.py
+  279  vim ../configs/car_cfg.py 
+  280  python3 train.py ../configs/car_cfg.py
+  281  vim /workspace/git/SA-SSD/mmdet/datasets/kitti.py
+  282  python3 train.py ../configs/car_cfg.py
+  283  pip list > res1
+  284  vim res1 
+  285  nvcc --version
+  286  python3 train.py ../configs/car_cfg.py
+  287  nvcc --version
+  288  pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu111
+  289  python3 train.py ../configs/car_cfg.py
+  290  cd ..
+  291  cd mmdet/ops/points_op/
+  292  python3 setup.py build_ext --inplace
+  293  cd ..
+  294  ls
+  295  cd pointnet2/
+  296  python3 setup.py build_ext --inplace
+  297  diff -r /workspace/git/SA-SSD/mmdet/ops/pointnet2/src/interpolate.cpp /workspace/SA-SSD/mmdet/ops/pointnet2/src/interpolate.cpp
+  298  pip install torch==1.8
+  299  pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu111
+  300  vim /workspace/git/SA-SSD/mmdet/ops/pointnet2/src/interpolate.cpp
+  301  python3 setup.py build_ext --inplace
+  302  vim /workspace/git/SA-SSD/mmdet/ops/pointnet2/src/interpolate.cpp
+  303  pip uninstall torch torchvision torchaudio
+  304  pip install torch==1.10
+  305  python
+  306  pip install torch==1.11
+  307  python
+  308  pip install torch==1.12
+  309  python
+  310  pip install torch==1.13
+  311  nvidia-smi
+  312  python3 setup.py build_ext --inplace
+  313  vim /workspace/git/SA-SSD/mmdet/ops/pointnet2/src/interpolate.cpp
+  314  python3 setup.py build_ext --inplace
+  315  pip install torch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117
+  316  python3 setup.py build_ext --inplace
+  317  cd ..
+  318  ls
+  319  cd iou3d/
+  320  python3 setup.py build_ext --inplace
+  321  cd ..
+  322  ls
+  323  cd points_op/
+  324  python3 setup.py build_ext --inplace
+  325  cd ../..
+  326  cd ..
+  327  cd tools/
+  328  python3 train.py ../configs/car_cfg.py
+  329  vim /workspace/git/SA-SSD/mmdet/models/necks/cmn.py
+  330  python3 train.py ../configs/car_cfg.py
+  331  vim /workspace/git/SA-SSD/mmdet/models/detectors/single_stage.py
+  332  vim /workspace/git/SA-SSD/mmdet/models/single_stage_heads/ssd_rotate_head.py
+  333  python3 train.py ../configs/car_cfg.py
+  334  vimvim /workspace/git/SA-SSD/mmdet/models/single_stage_heads/ssd_rotate_head.py
+  335  vim /workspace/git/SA-SSD/mmdet/models/single_stage_heads/ssd_rotate_head.py
+  336  history
+  337  history > ../history.txt

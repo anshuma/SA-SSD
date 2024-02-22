@@ -1,0 +1,97 @@
+running build_ext
+Emitting ninja build file /workspace/git/SA-SSD/mmdet/ops/points_op/build/temp.linux-x86_64-3.8/build.ninja...
+Compiling objects...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+[1/1] c++ -MMD -MF /workspace/git/SA-SSD/mmdet/ops/points_op/build/temp.linux-x86_64-3.8/src/points_op.o.d -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -fPIC -I/usr/local/lib/python3.8/dist-packages/pybind11/include -I/usr/local/lib/python3.8/dist-packages/pybind11/include -I/usr/local/lib/python3.8/dist-packages/torch/include -I/usr/local/lib/python3.8/dist-packages/torch/include/torch/csrc/api/include -I/usr/local/lib/python3.8/dist-packages/torch/include/TH -I/usr/local/lib/python3.8/dist-packages/torch/include/THC -I/usr/include/python3.8 -c -c /workspace/git/SA-SSD/mmdet/ops/points_op/src/points_op.cpp -o /workspace/git/SA-SSD/mmdet/ops/points_op/build/temp.linux-x86_64-3.8/src/points_op.o -g -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=points_op_cpu -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++14
+FAILED: /workspace/git/SA-SSD/mmdet/ops/points_op/build/temp.linux-x86_64-3.8/src/points_op.o 
+c++ -MMD -MF /workspace/git/SA-SSD/mmdet/ops/points_op/build/temp.linux-x86_64-3.8/src/points_op.o.d -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -fPIC -I/usr/local/lib/python3.8/dist-packages/pybind11/include -I/usr/local/lib/python3.8/dist-packages/pybind11/include -I/usr/local/lib/python3.8/dist-packages/torch/include -I/usr/local/lib/python3.8/dist-packages/torch/include/torch/csrc/api/include -I/usr/local/lib/python3.8/dist-packages/torch/include/TH -I/usr/local/lib/python3.8/dist-packages/torch/include/THC -I/usr/include/python3.8 -c -c /workspace/git/SA-SSD/mmdet/ops/points_op/src/points_op.cpp -o /workspace/git/SA-SSD/mmdet/ops/points_op/build/temp.linux-x86_64-3.8/src/points_op.o -g -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=points_op_cpu -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++14
+In file included from /usr/local/lib/python3.8/dist-packages/torch/include/ATen/Parallel.h:149,
+                 from /usr/local/lib/python3.8/dist-packages/torch/include/torch/csrc/api/include/torch/utils.h:3,
+                 from /usr/local/lib/python3.8/dist-packages/torch/include/torch/csrc/api/include/torch/nn/cloneable.h:5,
+                 from /usr/local/lib/python3.8/dist-packages/torch/include/torch/csrc/api/include/torch/nn.h:3,
+                 from /usr/local/lib/python3.8/dist-packages/torch/include/torch/csrc/api/include/torch/all.h:12,
+                 from /usr/local/lib/python3.8/dist-packages/torch/include/torch/extension.h:4,
+                 from /workspace/git/SA-SSD/mmdet/ops/points_op/src/points_op.cpp:10:
+/usr/local/lib/python3.8/dist-packages/torch/include/ATen/ParallelOpenMP.h:84: warning: ignoring ‘#pragma omp parallel’ [-Wunknown-pragmas]
+   84 | #pragma omp parallel for if ((end - begin) >= grain_size)
+      | 
+/workspace/git/SA-SSD/mmdet/ops/points_op/src/points_op.cpp: In function ‘int pts_in_boxes3d_cpu(at::Tensor, at::Tensor, at::Tensor, at::Tensor)’:
+/workspace/git/SA-SSD/mmdet/ops/points_op/src/points_op.cpp:15:29: error: ‘AT_CHECK’ was not declared in this scope; did you mean ‘DCHECK’?
+   15 | #define CHECK_CONTIGUOUS(x) AT_CHECK(x.is_contiguous(), #x, " must be contiguous ")
+      |                             ^~~~~~~~
+/workspace/git/SA-SSD/mmdet/ops/points_op/src/points_op.cpp:15:29: note: in definition of macro ‘CHECK_CONTIGUOUS’
+   15 | #define CHECK_CONTIGUOUS(x) AT_CHECK(x.is_contiguous(), #x, " must be contiguous ")
+      |                             ^~~~~~~~
+/workspace/git/SA-SSD/mmdet/ops/points_op/src/points_op.cpp:121:45: warning: ‘T* at::Tensor::data() const [with T = int]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  121 |     int * pts_flag_flat = pts_flag.data<int>();
+      |                           ~~~~~~~~~~~~~~~~~~^~
+In file included from /usr/local/lib/python3.8/dist-packages/torch/include/ATen/Tensor.h:3,
+                 from /usr/local/lib/python3.8/dist-packages/torch/include/ATen/Context.h:4,
+                 from /usr/local/lib/python3.8/dist-packages/torch/include/ATen/ATen.h:9,
+                 from /usr/local/lib/python3.8/dist-packages/torch/include/torch/csrc/api/include/torch/types.h:3,
+                 from /usr/local/lib/python3.8/dist-packages/torch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                 from /usr/local/lib/python3.8/dist-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                 from /usr/local/lib/python3.8/dist-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                 from /usr/local/lib/python3.8/dist-packages/torch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                 from /usr/local/lib/python3.8/dist-packages/torch/include/torch/csrc/api/include/torch/data.h:3,
+                 from /usr/local/lib/python3.8/dist-packages/torch/include/torch/csrc/api/include/torch/all.h:8,
+                 from /usr/local/lib/python3.8/dist-packages/torch/include/torch/extension.h:4,
+                 from /workspace/git/SA-SSD/mmdet/ops/points_op/src/points_op.cpp:10:
+/usr/local/lib/python3.8/dist-packages/torch/include/ATen/core/TensorBody.h:363:7: note: declared here
+  363 |   T * data() const {
+      |       ^~~~
+/workspace/git/SA-SSD/mmdet/ops/points_op/src/points_op.cpp:122:39: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  122 |     float * pts_flat = pts.data<float>();
+      |                        ~~~~~~~~~~~~~~~^~
+In file included from /usr/local/lib/python3.8/dist-packages/torch/include/ATen/Tensor.h:3,
+                 from /usr/local/lib/python3.8/dist-packages/torch/include/ATen/Context.h:4,
+                 from /usr/local/lib/python3.8/dist-packages/torch/include/ATen/ATen.h:9,
+                 from /usr/local/lib/python3.8/dist-packages/torch/include/torch/csrc/api/include/torch/types.h:3,
+                 from /usr/local/lib/python3.8/dist-packages/torch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                 from /usr/local/lib/python3.8/dist-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                 from /usr/local/lib/python3.8/dist-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                 from /usr/local/lib/python3.8/dist-packages/torch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                 from /usr/local/lib/python3.8/dist-packages/torch/include/torch/csrc/api/include/torch/data.h:3,
+                 from /usr/local/lib/python3.8/dist-packages/torch/include/torch/csrc/api/include/torch/all.h:8,
+                 from /usr/local/lib/python3.8/dist-packages/torch/include/torch/extension.h:4,
+                 from /workspace/git/SA-SSD/mmdet/ops/points_op/src/points_op.cpp:10:
+/usr/local/lib/python3.8/dist-packages/torch/include/ATen/core/TensorBody.h:363:7: note: declared here
+  363 |   T * data() const {
+      |       ^~~~
+/workspace/git/SA-SSD/mmdet/ops/points_op/src/points_op.cpp:123:47: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  123 |     float * boxes3d_flat = boxes3d.data<float>();
+      |                            ~~~~~~~~~~~~~~~~~~~^~
+In file included from /usr/local/lib/python3.8/dist-packages/torch/include/ATen/Tensor.h:3,
+                 from /usr/local/lib/python3.8/dist-packages/torch/include/ATen/Context.h:4,
+                 from /usr/local/lib/python3.8/dist-packages/torch/include/ATen/ATen.h:9,
+                 from /usr/local/lib/python3.8/dist-packages/torch/include/torch/csrc/api/include/torch/types.h:3,
+                 from /usr/local/lib/python3.8/dist-packages/torch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                 from /usr/local/lib/python3.8/dist-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                 from /usr/local/lib/python3.8/dist-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                 from /usr/local/lib/python3.8/dist-packages/torch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                 from /usr/local/lib/python3.8/dist-packages/torch/include/torch/csrc/api/include/torch/data.h:3,
+                 from /usr/local/lib/python3.8/dist-packages/torch/include/torch/csrc/api/include/torch/all.h:8,
+                 from /usr/local/lib/python3.8/dist-packages/torch/include/torch/extension.h:4,
+                 from /workspace/git/SA-SSD/mmdet/ops/points_op/src/points_op.cpp:10:
+/usr/local/lib/python3.8/dist-packages/torch/include/ATen/core/TensorBody.h:363:7: note: declared here
+  363 |   T * data() const {
+      |       ^~~~
+/workspace/git/SA-SSD/mmdet/ops/points_op/src/points_op.cpp:124:53: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  124 |     float * reg_target_flat = reg_target.data<float>();
+      |                               ~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /usr/local/lib/python3.8/dist-packages/torch/include/ATen/Tensor.h:3,
+                 from /usr/local/lib/python3.8/dist-packages/torch/include/ATen/Context.h:4,
+                 from /usr/local/lib/python3.8/dist-packages/torch/include/ATen/ATen.h:9,
+                 from /usr/local/lib/python3.8/dist-packages/torch/include/torch/csrc/api/include/torch/types.h:3,
+                 from /usr/local/lib/python3.8/dist-packages/torch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                 from /usr/local/lib/python3.8/dist-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                 from /usr/local/lib/python3.8/dist-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                 from /usr/local/lib/python3.8/dist-packages/torch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                 from /usr/local/lib/python3.8/dist-packages/torch/include/torch/csrc/api/include/torch/data.h:3,
+                 from /usr/local/lib/python3.8/dist-packages/torch/include/torch/csrc/api/include/torch/all.h:8,
+                 from /usr/local/lib/python3.8/dist-packages/torch/include/torch/extension.h:4,
+                 from /workspace/git/SA-SSD/mmdet/ops/points_op/src/points_op.cpp:10:
+/usr/local/lib/python3.8/dist-packages/torch/include/ATen/core/TensorBody.h:363:7: note: declared here
+  363 |   T * data() const {
+      |       ^~~~
+ninja: build stopped: subcommand failed.

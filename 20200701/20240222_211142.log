@@ -1,0 +1,32 @@
+Distributed training: False
+Set random seed to 0
+**********************Start training**********************
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+epoch[1][20/1856]: lr: 0.000300, aux_loss_cls: 0.248968, aux_loss_reg: 0.933211, rpn_loc_loss: 4.102602, rpn_cls_loss: 6.552194, rpn_dir_loss: 0.185157, loss_cls: 28.860767, loss: 40.882899
+epoch[1][40/1856]: lr: 0.000300, aux_loss_cls: 0.195028, aux_loss_reg: 0.879281, rpn_loc_loss: 1.856463, rpn_cls_loss: 0.771635, rpn_dir_loss: 0.139216, loss_cls: 6.209012, loss: 10.050635
+epoch[1][60/1856]: lr: 0.000300, aux_loss_cls: 0.125875, aux_loss_reg: 0.773766, rpn_loc_loss: 1.591606, rpn_cls_loss: 0.685604, rpn_dir_loss: 0.138276, loss_cls: 3.710610, loss: 7.025738
+epoch[1][80/1856]: lr: 0.000300, aux_loss_cls: 0.118511, aux_loss_reg: 0.797604, rpn_loc_loss: 1.556024, rpn_cls_loss: 0.616047, rpn_dir_loss: 0.141885, loss_cls: 1.407075, loss: 4.637146
+epoch[1][100/1856]: lr: 0.000300, aux_loss_cls: 0.103960, aux_loss_reg: 0.688632, rpn_loc_loss: 1.505753, rpn_cls_loss: 0.632420, rpn_dir_loss: 0.138954, loss_cls: 1.410429, loss: 4.480147
+epoch[1][120/1856]: lr: 0.000300, aux_loss_cls: 0.108815, aux_loss_reg: 0.677531, rpn_loc_loss: 1.295440, rpn_cls_loss: 0.574298, rpn_dir_loss: 0.137967, loss_cls: 0.454810, loss: 3.248860
+epoch[1][140/1856]: lr: 0.000300, aux_loss_cls: 0.108998, aux_loss_reg: 0.652293, rpn_loc_loss: 1.134793, rpn_cls_loss: 0.558360, rpn_dir_loss: 0.139214, loss_cls: 0.378360, loss: 2.972019
+epoch[1][160/1856]: lr: 0.000300, aux_loss_cls: 0.094938, aux_loss_reg: 0.571340, rpn_loc_loss: 0.989082, rpn_cls_loss: 0.538767, rpn_dir_loss: 0.139423, loss_cls: 0.389277, loss: 2.722828
+epoch[1][180/1856]: lr: 0.000300, aux_loss_cls: 0.090955, aux_loss_reg: 0.551390, rpn_loc_loss: 0.962923, rpn_cls_loss: 0.527956, rpn_dir_loss: 0.137818, loss_cls: 0.304723, loss: 2.575765
+epoch[1][200/1856]: lr: 0.000300, aux_loss_cls: 0.080684, aux_loss_reg: 0.531473, rpn_loc_loss: 0.932034, rpn_cls_loss: 0.504780, rpn_dir_loss: 0.133904, loss_cls: 0.287834, loss: 2.470708
+epoch[1][220/1856]: lr: 0.000300, aux_loss_cls: 0.077792, aux_loss_reg: 0.486852, rpn_loc_loss: 0.941406, rpn_cls_loss: 0.492063, rpn_dir_loss: 0.137029, loss_cls: 0.293894, loss: 2.429036
+epoch[1][240/1856]: lr: 0.000300, aux_loss_cls: 0.078217, aux_loss_reg: 0.466048, rpn_loc_loss: 0.927068, rpn_cls_loss: 0.449825, rpn_dir_loss: 0.136183, loss_cls: 0.284200, loss: 2.341542
+epoch[1][260/1856]: lr: 0.000300, aux_loss_cls: 0.065437, aux_loss_reg: 0.485221, rpn_loc_loss: 0.798513, rpn_cls_loss: 0.463186, rpn_dir_loss: 0.135985, loss_cls: 0.293640, loss: 2.241982

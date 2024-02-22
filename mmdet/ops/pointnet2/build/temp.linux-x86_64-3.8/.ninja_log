@@ -1,0 +1,11 @@
+# ninja log v5
+13	11170	1708631024000000000	/workspace/git/SA-SSD/mmdet/ops/pointnet2/build/temp.linux-x86_64-3.8/src/interpolate_gpu.o	46dd436742e5b73d
+15	12897	1708631025000000000	/workspace/git/SA-SSD/mmdet/ops/pointnet2/build/temp.linux-x86_64-3.8/src/pointnet2_api.o	465db2210387b1f1
+53	4325	1708631169000000000	/workspace/git/SA-SSD/mmdet/ops/pointnet2/build/temp.linux-x86_64-3.8/src/interpolate.o	f78ac03ceb3ec86d
+31	17920	1708633677000000000	/workspace/git/SA-SSD/mmdet/ops/pointnet2/build/temp.linux-x86_64-3.8/src/pointnet2_api.o	c32369f9a4398e53
+30	20407	1708633679000000000	/workspace/git/SA-SSD/mmdet/ops/pointnet2/build/temp.linux-x86_64-3.8/src/interpolate_gpu.o	b3c1561eb71494c3
+53	20753	1708633953000000000	/workspace/git/SA-SSD/mmdet/ops/pointnet2/build/temp.linux-x86_64-3.8/src/pointnet2_api.o	c32369f9a4398e53
+54	6929	1708635070000000000	/workspace/git/SA-SSD/mmdet/ops/pointnet2/build/temp.linux-x86_64-3.8/src/interpolate.o	470acc17b4a0d2fd
+55	18381	1708635082000000000	/workspace/git/SA-SSD/mmdet/ops/pointnet2/build/temp.linux-x86_64-3.8/src/pointnet2_api.o	c32369f9a4398e53
+51	6933	1708635171000000000	/workspace/git/SA-SSD/mmdet/ops/pointnet2/build/temp.linux-x86_64-3.8/src/interpolate.o	470acc17b4a0d2fd
+52	18798	1708635183000000000	/workspace/git/SA-SSD/mmdet/ops/pointnet2/build/temp.linux-x86_64-3.8/src/pointnet2_api.o	c32369f9a4398e53

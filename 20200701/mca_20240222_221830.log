@@ -1,0 +1,95 @@
+Distributed training: False
+Set random seed to 0
+**********************Start training**********************
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+epoch[1][20/1856]: lr: 0.000300, aux_loss_cls: 0.242745, aux_loss_reg: 0.938759, rpn_loc_loss: 3.960874, rpn_cls_loss: 6.473553, rpn_dir_loss: 0.179408, loss_cls: 29.792757, loss: 41.588094
+epoch[1][40/1856]: lr: 0.000300, aux_loss_cls: 0.191136, aux_loss_reg: 0.891516, rpn_loc_loss: 2.003706, rpn_cls_loss: 0.791772, rpn_dir_loss: 0.139991, loss_cls: 8.492040, loss: 12.510161
+epoch[1][60/1856]: lr: 0.000300, aux_loss_cls: 0.121180, aux_loss_reg: 0.769289, rpn_loc_loss: 1.649633, rpn_cls_loss: 0.689105, rpn_dir_loss: 0.138080, loss_cls: 3.987274, loss: 7.354560
+epoch[1][80/1856]: lr: 0.000300, aux_loss_cls: 0.119514, aux_loss_reg: 0.797293, rpn_loc_loss: 1.627450, rpn_cls_loss: 0.638961, rpn_dir_loss: 0.143972, loss_cls: 1.324786, loss: 4.651977
+epoch[1][100/1856]: lr: 0.000300, aux_loss_cls: 0.100801, aux_loss_reg: 0.694774, rpn_loc_loss: 1.632943, rpn_cls_loss: 0.652331, rpn_dir_loss: 0.139146, loss_cls: 1.499722, loss: 4.719717
+epoch[1][120/1856]: lr: 0.000300, aux_loss_cls: 0.105035, aux_loss_reg: 0.701484, rpn_loc_loss: 1.530753, rpn_cls_loss: 0.611465, rpn_dir_loss: 0.137752, loss_cls: 0.795507, loss: 3.881996
+epoch[1][140/1856]: lr: 0.000300, aux_loss_cls: 0.108667, aux_loss_reg: 0.706634, rpn_loc_loss: 1.288348, rpn_cls_loss: 0.582218, rpn_dir_loss: 0.136946, loss_cls: 0.484734, loss: 3.307548
+epoch[1][160/1856]: lr: 0.000300, aux_loss_cls: 0.094979, aux_loss_reg: 0.621692, rpn_loc_loss: 1.148261, rpn_cls_loss: 0.563398, rpn_dir_loss: 0.139392, loss_cls: 0.468258, loss: 3.035980
+epoch[1][180/1856]: lr: 0.000300, aux_loss_cls: 0.092792, aux_loss_reg: 0.599699, rpn_loc_loss: 1.106399, rpn_cls_loss: 0.560601, rpn_dir_loss: 0.137878, loss_cls: 0.378042, loss: 2.875411
+epoch[1][200/1856]: lr: 0.000300, aux_loss_cls: 0.078995, aux_loss_reg: 0.574707, rpn_loc_loss: 1.026873, rpn_cls_loss: 0.531322, rpn_dir_loss: 0.133590, loss_cls: 0.302348, loss: 2.647835
+epoch[1][220/1856]: lr: 0.000300, aux_loss_cls: 0.073380, aux_loss_reg: 0.504053, rpn_loc_loss: 0.946905, rpn_cls_loss: 0.518686, rpn_dir_loss: 0.136546, loss_cls: 0.283126, loss: 2.462697
+epoch[1][240/1856]: lr: 0.000300, aux_loss_cls: 0.077862, aux_loss_reg: 0.476347, rpn_loc_loss: 0.956319, rpn_cls_loss: 0.480570, rpn_dir_loss: 0.136133, loss_cls: 0.299151, loss: 2.426382
+epoch[1][260/1856]: lr: 0.000300, aux_loss_cls: 0.064303, aux_loss_reg: 0.482011, rpn_loc_loss: 0.873359, rpn_cls_loss: 0.487862, rpn_dir_loss: 0.136627, loss_cls: 0.298923, loss: 2.343085
+epoch[1][280/1856]: lr: 0.000300, aux_loss_cls: 0.067611, aux_loss_reg: 0.445639, rpn_loc_loss: 0.785548, rpn_cls_loss: 0.466571, rpn_dir_loss: 0.134298, loss_cls: 0.262331, loss: 2.161998
+epoch[1][300/1856]: lr: 0.000300, aux_loss_cls: 0.061398, aux_loss_reg: 0.448302, rpn_loc_loss: 0.825230, rpn_cls_loss: 0.463582, rpn_dir_loss: 0.130131, loss_cls: 0.278919, loss: 2.207561
+epoch[1][320/1856]: lr: 0.000300, aux_loss_cls: 0.055831, aux_loss_reg: 0.455610, rpn_loc_loss: 0.820328, rpn_cls_loss: 0.440201, rpn_dir_loss: 0.135997, loss_cls: 0.263930, loss: 2.171898
+epoch[1][340/1856]: lr: 0.000300, aux_loss_cls: 0.058912, aux_loss_reg: 0.440815, rpn_loc_loss: 0.810568, rpn_cls_loss: 0.445526, rpn_dir_loss: 0.130774, loss_cls: 0.265020, loss: 2.151616
+epoch[1][360/1856]: lr: 0.000300, aux_loss_cls: 0.058507, aux_loss_reg: 0.421774, rpn_loc_loss: 0.784273, rpn_cls_loss: 0.428194, rpn_dir_loss: 0.134031, loss_cls: 0.264409, loss: 2.091187
+epoch[1][380/1856]: lr: 0.000300, aux_loss_cls: 0.053788, aux_loss_reg: 0.391154, rpn_loc_loss: 0.733571, rpn_cls_loss: 0.427899, rpn_dir_loss: 0.133356, loss_cls: 0.255808, loss: 1.995576
+epoch[1][400/1856]: lr: 0.000300, aux_loss_cls: 0.052511, aux_loss_reg: 0.372996, rpn_loc_loss: 0.741581, rpn_cls_loss: 0.426746, rpn_dir_loss: 0.136984, loss_cls: 0.256948, loss: 1.987766
+epoch[1][420/1856]: lr: 0.000300, aux_loss_cls: 0.051966, aux_loss_reg: 0.422900, rpn_loc_loss: 0.761375, rpn_cls_loss: 0.406978, rpn_dir_loss: 0.135905, loss_cls: 0.256104, loss: 2.035228
+epoch[1][440/1856]: lr: 0.000300, aux_loss_cls: 0.049866, aux_loss_reg: 0.420619, rpn_loc_loss: 0.743019, rpn_cls_loss: 0.410024, rpn_dir_loss: 0.134086, loss_cls: 0.242296, loss: 1.999910
+epoch[1][460/1856]: lr: 0.000300, aux_loss_cls: 0.047354, aux_loss_reg: 0.381266, rpn_loc_loss: 0.720045, rpn_cls_loss: 0.408908, rpn_dir_loss: 0.133009, loss_cls: 0.238536, loss: 1.929118
+epoch[1][480/1856]: lr: 0.000300, aux_loss_cls: 0.044532, aux_loss_reg: 0.366935, rpn_loc_loss: 0.684142, rpn_cls_loss: 0.401823, rpn_dir_loss: 0.133241, loss_cls: 0.225156, loss: 1.855829
+epoch[1][500/1856]: lr: 0.000300, aux_loss_cls: 0.052114, aux_loss_reg: 0.406338, rpn_loc_loss: 0.761055, rpn_cls_loss: 0.402607, rpn_dir_loss: 0.131640, loss_cls: 0.242551, loss: 1.996305
+epoch[1][520/1856]: lr: 0.000301, aux_loss_cls: 0.050788, aux_loss_reg: 0.384748, rpn_loc_loss: 0.667083, rpn_cls_loss: 0.392351, rpn_dir_loss: 0.131737, loss_cls: 0.225545, loss: 1.852252
+epoch[1][540/1856]: lr: 0.000301, aux_loss_cls: 0.046271, aux_loss_reg: 0.388392, rpn_loc_loss: 0.679958, rpn_cls_loss: 0.387955, rpn_dir_loss: 0.133148, loss_cls: 0.220906, loss: 1.856630
+epoch[1][560/1856]: lr: 0.000301, aux_loss_cls: 0.050600, aux_loss_reg: 0.341130, rpn_loc_loss: 0.633387, rpn_cls_loss: 0.368291, rpn_dir_loss: 0.128702, loss_cls: 0.211354, loss: 1.733464
+epoch[1][580/1856]: lr: 0.000301, aux_loss_cls: 0.045631, aux_loss_reg: 0.361020, rpn_loc_loss: 0.658930, rpn_cls_loss: 0.364268, rpn_dir_loss: 0.130424, loss_cls: 0.207946, loss: 1.768220
+epoch[1][600/1856]: lr: 0.000301, aux_loss_cls: 0.045748, aux_loss_reg: 0.367050, rpn_loc_loss: 0.623863, rpn_cls_loss: 0.348188, rpn_dir_loss: 0.131623, loss_cls: 0.199970, loss: 1.716442
+epoch[1][620/1856]: lr: 0.000301, aux_loss_cls: 0.041377, aux_loss_reg: 0.326697, rpn_loc_loss: 0.625267, rpn_cls_loss: 0.346420, rpn_dir_loss: 0.132250, loss_cls: 0.208555, loss: 1.680565
+epoch[1][640/1856]: lr: 0.000301, aux_loss_cls: 0.042891, aux_loss_reg: 0.320798, rpn_loc_loss: 0.686706, rpn_cls_loss: 0.349940, rpn_dir_loss: 0.132988, loss_cls: 0.206494, loss: 1.739817
+epoch[1][660/1856]: lr: 0.000301, aux_loss_cls: 0.043910, aux_loss_reg: 0.325444, rpn_loc_loss: 0.612279, rpn_cls_loss: 0.331847, rpn_dir_loss: 0.130295, loss_cls: 0.200371, loss: 1.644146
+epoch[1][680/1856]: lr: 0.000301, aux_loss_cls: 0.039336, aux_loss_reg: 0.318385, rpn_loc_loss: 0.587287, rpn_cls_loss: 0.328565, rpn_dir_loss: 0.128895, loss_cls: 0.195392, loss: 1.597859
+epoch[1][700/1856]: lr: 0.000301, aux_loss_cls: 0.042817, aux_loss_reg: 0.303378, rpn_loc_loss: 0.641403, rpn_cls_loss: 0.334900, rpn_dir_loss: 0.130890, loss_cls: 0.184916, loss: 1.638304
+epoch[1][720/1856]: lr: 0.000301, aux_loss_cls: 0.042016, aux_loss_reg: 0.311657, rpn_loc_loss: 0.627605, rpn_cls_loss: 0.329835, rpn_dir_loss: 0.134608, loss_cls: 0.191124, loss: 1.636845
+epoch[1][740/1856]: lr: 0.000301, aux_loss_cls: 0.038918, aux_loss_reg: 0.309169, rpn_loc_loss: 0.643538, rpn_cls_loss: 0.314266, rpn_dir_loss: 0.136279, loss_cls: 0.186855, loss: 1.629024
+epoch[1][760/1856]: lr: 0.000301, aux_loss_cls: 0.050803, aux_loss_reg: 0.317706, rpn_loc_loss: 0.638545, rpn_cls_loss: 0.330077, rpn_dir_loss: 0.134205, loss_cls: 0.189896, loss: 1.661232
+epoch[1][780/1856]: lr: 0.000301, aux_loss_cls: 0.045649, aux_loss_reg: 0.304734, rpn_loc_loss: 0.631018, rpn_cls_loss: 0.315345, rpn_dir_loss: 0.131994, loss_cls: 0.187449, loss: 1.616189
+epoch[1][800/1856]: lr: 0.000301, aux_loss_cls: 0.041839, aux_loss_reg: 0.326729, rpn_loc_loss: 0.594759, rpn_cls_loss: 0.320269, rpn_dir_loss: 0.130272, loss_cls: 0.184891, loss: 1.598760
+epoch[1][820/1856]: lr: 0.000301, aux_loss_cls: 0.038880, aux_loss_reg: 0.287617, rpn_loc_loss: 0.608025, rpn_cls_loss: 0.306894, rpn_dir_loss: 0.133994, loss_cls: 0.173148, loss: 1.548558
+epoch[1][840/1856]: lr: 0.000301, aux_loss_cls: 0.046011, aux_loss_reg: 0.311218, rpn_loc_loss: 0.656616, rpn_cls_loss: 0.306798, rpn_dir_loss: 0.130006, loss_cls: 0.190666, loss: 1.641316
+epoch[1][860/1856]: lr: 0.000301, aux_loss_cls: 0.037061, aux_loss_reg: 0.284380, rpn_loc_loss: 0.558038, rpn_cls_loss: 0.283659, rpn_dir_loss: 0.132874, loss_cls: 0.184043, loss: 1.480055
+epoch[1][880/1856]: lr: 0.000301, aux_loss_cls: 0.037233, aux_loss_reg: 0.295594, rpn_loc_loss: 0.576083, rpn_cls_loss: 0.290086, rpn_dir_loss: 0.130661, loss_cls: 0.181811, loss: 1.511469
+epoch[1][900/1856]: lr: 0.000302, aux_loss_cls: 0.039207, aux_loss_reg: 0.302936, rpn_loc_loss: 0.569795, rpn_cls_loss: 0.286531, rpn_dir_loss: 0.130650, loss_cls: 0.171805, loss: 1.500924
+epoch[1][920/1856]: lr: 0.000302, aux_loss_cls: 0.038897, aux_loss_reg: 0.276032, rpn_loc_loss: 0.544994, rpn_cls_loss: 0.288575, rpn_dir_loss: 0.131024, loss_cls: 0.168882, loss: 1.448404
+epoch[1][940/1856]: lr: 0.000302, aux_loss_cls: 0.036562, aux_loss_reg: 0.304996, rpn_loc_loss: 0.554010, rpn_cls_loss: 0.278011, rpn_dir_loss: 0.130763, loss_cls: 0.156799, loss: 1.461141
+epoch[1][960/1856]: lr: 0.000302, aux_loss_cls: 0.038541, aux_loss_reg: 0.268358, rpn_loc_loss: 0.544854, rpn_cls_loss: 0.270715, rpn_dir_loss: 0.131636, loss_cls: 0.160940, loss: 1.415044
+epoch[1][980/1856]: lr: 0.000302, aux_loss_cls: 0.038632, aux_loss_reg: 0.274430, rpn_loc_loss: 0.562035, rpn_cls_loss: 0.279084, rpn_dir_loss: 0.131537, loss_cls: 0.166279, loss: 1.451997
+epoch[1][1000/1856]: lr: 0.000302, aux_loss_cls: 0.038914, aux_loss_reg: 0.283980, rpn_loc_loss: 0.509262, rpn_cls_loss: 0.254159, rpn_dir_loss: 0.128289, loss_cls: 0.148237, loss: 1.362842
+epoch[1][1020/1856]: lr: 0.000302, aux_loss_cls: 0.034117, aux_loss_reg: 0.259700, rpn_loc_loss: 0.503687, rpn_cls_loss: 0.248113, rpn_dir_loss: 0.131159, loss_cls: 0.159029, loss: 1.335804
+epoch[1][1040/1856]: lr: 0.000302, aux_loss_cls: 0.037763, aux_loss_reg: 0.270397, rpn_loc_loss: 0.562403, rpn_cls_loss: 0.271375, rpn_dir_loss: 0.125288, loss_cls: 0.167536, loss: 1.434763
+epoch[1][1060/1856]: lr: 0.000302, aux_loss_cls: 0.040508, aux_loss_reg: 0.293774, rpn_loc_loss: 0.576414, rpn_cls_loss: 0.281941, rpn_dir_loss: 0.128944, loss_cls: 0.167209, loss: 1.488790
+epoch[1][1080/1856]: lr: 0.000302, aux_loss_cls: 0.037194, aux_loss_reg: 0.282802, rpn_loc_loss: 0.611260, rpn_cls_loss: 0.276245, rpn_dir_loss: 0.129454, loss_cls: 0.163199, loss: 1.500154
+epoch[1][1100/1856]: lr: 0.000302, aux_loss_cls: 0.038856, aux_loss_reg: 0.304808, rpn_loc_loss: 0.559019, rpn_cls_loss: 0.265594, rpn_dir_loss: 0.127142, loss_cls: 0.161234, loss: 1.456653
+epoch[1][1120/1856]: lr: 0.000302, aux_loss_cls: 0.034057, aux_loss_reg: 0.268497, rpn_loc_loss: 0.537056, rpn_cls_loss: 0.246808, rpn_dir_loss: 0.127315, loss_cls: 0.149205, loss: 1.362939
+epoch[1][1140/1856]: lr: 0.000302, aux_loss_cls: 0.033495, aux_loss_reg: 0.267861, rpn_loc_loss: 0.525253, rpn_cls_loss: 0.254615, rpn_dir_loss: 0.128174, loss_cls: 0.150349, loss: 1.359746
+epoch[1][1160/1856]: lr: 0.000303, aux_loss_cls: 0.039709, aux_loss_reg: 0.275317, rpn_loc_loss: 0.556172, rpn_cls_loss: 0.268251, rpn_dir_loss: 0.124574, loss_cls: 0.162447, loss: 1.426470
+epoch[1][1180/1856]: lr: 0.000303, aux_loss_cls: 0.038047, aux_loss_reg: 0.248193, rpn_loc_loss: 0.554685, rpn_cls_loss: 0.265470, rpn_dir_loss: 0.126510, loss_cls: 0.156516, loss: 1.389420
+epoch[1][1200/1856]: lr: 0.000303, aux_loss_cls: 0.034361, aux_loss_reg: 0.268264, rpn_loc_loss: 0.512104, rpn_cls_loss: 0.244331, rpn_dir_loss: 0.123551, loss_cls: 0.142358, loss: 1.324968
+epoch[1][1220/1856]: lr: 0.000303, aux_loss_cls: 0.034310, aux_loss_reg: 0.270685, rpn_loc_loss: 0.495743, rpn_cls_loss: 0.234572, rpn_dir_loss: 0.124168, loss_cls: 0.142637, loss: 1.302115
+epoch[1][1240/1856]: lr: 0.000303, aux_loss_cls: 0.034126, aux_loss_reg: 0.247844, rpn_loc_loss: 0.465383, rpn_cls_loss: 0.246044, rpn_dir_loss: 0.123238, loss_cls: 0.145244, loss: 1.261879
+epoch[1][1260/1856]: lr: 0.000303, aux_loss_cls: 0.033942, aux_loss_reg: 0.247343, rpn_loc_loss: 0.495733, rpn_cls_loss: 0.236192, rpn_dir_loss: 0.119806, loss_cls: 0.147887, loss: 1.280903
+epoch[1][1280/1856]: lr: 0.000303, aux_loss_cls: 0.034184, aux_loss_reg: 0.240266, rpn_loc_loss: 0.531607, rpn_cls_loss: 0.232151, rpn_dir_loss: 0.122000, loss_cls: 0.143023, loss: 1.303231
+epoch[1][1300/1856]: lr: 0.000303, aux_loss_cls: 0.035278, aux_loss_reg: 0.251683, rpn_loc_loss: 0.492062, rpn_cls_loss: 0.236544, rpn_dir_loss: 0.126474, loss_cls: 0.139393, loss: 1.281434
+epoch[1][1320/1856]: lr: 0.000303, aux_loss_cls: 0.035893, aux_loss_reg: 0.248681, rpn_loc_loss: 0.492987, rpn_cls_loss: 0.237007, rpn_dir_loss: 0.127426, loss_cls: 0.137718, loss: 1.279711
+epoch[1][1340/1856]: lr: 0.000303, aux_loss_cls: 0.038609, aux_loss_reg: 0.301579, rpn_loc_loss: 0.527737, rpn_cls_loss: 0.257504, rpn_dir_loss: 0.127303, loss_cls: 0.143799, loss: 1.396531
+epoch[1][1360/1856]: lr: 0.000303, aux_loss_cls: 0.035475, aux_loss_reg: 0.232422, rpn_loc_loss: 0.508768, rpn_cls_loss: 0.242940, rpn_dir_loss: 0.122381, loss_cls: 0.149633, loss: 1.291619
+epoch[1][1380/1856]: lr: 0.000304, aux_loss_cls: 0.033366, aux_loss_reg: 0.248843, rpn_loc_loss: 0.482959, rpn_cls_loss: 0.229596, rpn_dir_loss: 0.121519, loss_cls: 0.144565, loss: 1.260847
+epoch[1][1400/1856]: lr: 0.000304, aux_loss_cls: 0.031053, aux_loss_reg: 0.231948, rpn_loc_loss: 0.536439, rpn_cls_loss: 0.246894, rpn_dir_loss: 0.122621, loss_cls: 0.140241, loss: 1.309195
+epoch[1][1420/1856]: lr: 0.000304, aux_loss_cls: 0.030198, aux_loss_reg: 0.240918, rpn_loc_loss: 0.459154, rpn_cls_loss: 0.218421, rpn_dir_loss: 0.120042, loss_cls: 0.138452, loss: 1.207186
+epoch[1][1440/1856]: lr: 0.000304, aux_loss_cls: 0.039920, aux_loss_reg: 0.259549, rpn_loc_loss: 0.452092, rpn_cls_loss: 0.201581, rpn_dir_loss: 0.124137, loss_cls: 0.135160, loss: 1.212439
+epoch[1][1460/1856]: lr: 0.000304, aux_loss_cls: 0.033317, aux_loss_reg: 0.250907, rpn_loc_loss: 0.458629, rpn_cls_loss: 0.227889, rpn_dir_loss: 0.119369, loss_cls: 0.129328, loss: 1.219438
+epoch[1][1480/1856]: lr: 0.000304, aux_loss_cls: 0.036797, aux_loss_reg: 0.258952, rpn_loc_loss: 0.466134, rpn_cls_loss: 0.242159, rpn_dir_loss: 0.116648, loss_cls: 0.133892, loss: 1.254583
+epoch[1][1500/1856]: lr: 0.000304, aux_loss_cls: 0.033123, aux_loss_reg: 0.237798, rpn_loc_loss: 0.491108, rpn_cls_loss: 0.241499, rpn_dir_loss: 0.120053, loss_cls: 0.130590, loss: 1.254171
+epoch[1][1520/1856]: lr: 0.000304, aux_loss_cls: 0.033943, aux_loss_reg: 0.238490, rpn_loc_loss: 0.465469, rpn_cls_loss: 0.225970, rpn_dir_loss: 0.116622, loss_cls: 0.132812, loss: 1.213308

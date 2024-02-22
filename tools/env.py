@@ -55,7 +55,7 @@ def get_root_logger(work_dir):
     if rank != 0:
         logger.setLevel('ERROR')
 
-    filename = '{}.log'.format(time.strftime('%Y%m%d_%H%M%S', time.localtime()))
+    filename = 'mca_{}.log'.format(time.strftime('%Y%m%d_%H%M%S', time.localtime()))
     log_file = os.path.join(work_dir, filename)
     file_handler = logging.FileHandler(log_file, 'w')
     file_handler.setLevel(logging.INFO)

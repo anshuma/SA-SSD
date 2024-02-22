@@ -353,6 +353,9 @@ class SSDRotateHead(nn.Module):
 
             selected = top_scores > thr
 
+            box_preds = box_preds.to(top_scores.device) 
+            top_labels = top_labels.to(top_scores.device)
+
             box_preds = box_preds[selected]
             top_labels = top_labels[selected]
 
@@ -376,9 +379,9 @@ def gen_sample_grid(box, window_size=(4, 7), grid_offsets=(0, 0), spatial_scale=
     win = window_size[0] * window_size[1]
     xg, yg, wg, lg, rg = torch.split(box, 1, dim=-1)
 
-    xg = xg.unsqueeze_(-1).expand(N, *window_size)
-    yg = yg.unsqueeze_(-1).expand(N, *window_size)
-    rg = rg.unsqueeze_(-1).expand(N, *window_size)
+    xg = xg.unsqueeze(-1).expand(N, *window_size)
+    yg = yg.unsqueeze(-1).expand(N, *window_size)
+    rg = rg.unsqueeze(-1).expand(N, *window_size)
 
     cosTheta = torch.cos(rg)
     sinTheta = torch.sin(rg)
@@ -386,8 +389,8 @@ def gen_sample_grid(box, window_size=(4, 7), grid_offsets=(0, 0), spatial_scale=
     xx = torch.linspace(-.5, .5, window_size[0]).type_as(box).view(1, -1) * wg
     yy = torch.linspace(-.5, .5, window_size[1]).type_as(box).view(1, -1) * lg
 
-    xx = xx.unsqueeze_(-1).expand(N, *window_size)
-    yy = yy.unsqueeze_(1).expand(N, *window_size)
+    xx = xx.unsqueeze(-1).expand(N, *window_size)
+    yy = yy.unsqueeze(1).expand(N, *window_size)
 
     x=(xx * cosTheta + yy * sinTheta + xg)
     y=(yy * cosTheta - xx * sinTheta + yg)

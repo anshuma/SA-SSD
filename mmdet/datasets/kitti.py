@@ -234,7 +234,7 @@ class KittiLiDAR(Dataset):
                     mask = fused_get_anchors_area(
                         dense_voxel_map, v, voxel_size, pc_range,
                         grid_size) > self.anchor_area_threshold
-                    anchors_mask[k] = DC(to_tensor(mask.astype(np.bool)))
+                    anchors_mask[k] = DC(to_tensor(mask.astype(np.bool_)))
                 data['anchors_mask'] = anchors_mask
 
             # filter gt_bbox out of range
@@ -340,7 +340,7 @@ class KittiLiDAR(Dataset):
                     dense_voxel_map, self.anchors_bv, voxel_size, pc_range,
                     grid_size) > self.anchor_area_threshold
 
-                data['anchors_mask'] = DC(to_tensor(anchors_mask.astype(np.bool)))
+                data['anchors_mask'] = DC(to_tensor(anchors_mask.astype(np.bool_)))
 
         if self.with_label:
             data['gt_labels'] = DC(to_tensor(gt_labels), cpu_only=True)
