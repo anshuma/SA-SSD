@@ -68,6 +68,8 @@ class SingleStageDetector(BaseDetector, RPNTestMixin, BBoxTestMixin,
             else:
                 if isinstance(elems, dict):
                     ret[key] = {k: torch.stack(v, dim=0) for k, v in elems.items()}
+                    #ret[key] = {k: torch.stack([item.data for item in v], dim=0) if isinstance(v, (list, tuple)) and all(isinstance(item, DataContainer) for item in v) else v for k, v in elems.items()}
+
                 else:
                     ret[key] = torch.stack(elems, dim=0)
         return ret

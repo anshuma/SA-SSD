@@ -210,7 +210,7 @@ lr_config = dict(
 checkpoint_config = dict(interval=2)
 log_config = dict(interval=20)
 
-total_epochs = 80
+total_epochs = 10
 dist_params = dict(backend='nccl')
 log_level = 'INFO'
 work_dir = '../20200701'
