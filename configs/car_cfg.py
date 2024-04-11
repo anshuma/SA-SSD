@@ -81,7 +81,7 @@ test_cfg = dict(
 )
 # dataset settings
 dataset_type = 'KittiLiDAR'
-data_root = '/workspace/git/SA-SSD/data/'
+data_root = '/u/student/2021/cs21resch15003/cs21mds14030/mca/SA-SSD/data/'
 img_norm_cfg = dict(
     mean=[123.675, 116.28, 103.53], std=[58.395, 57.12, 57.375], to_rgb=True)
 data = dict(
@@ -210,10 +210,10 @@ lr_config = dict(
 checkpoint_config = dict(interval=2)
 log_config = dict(interval=20)
 
-total_epochs = 10
+total_epochs = 80
 dist_params = dict(backend='nccl')
 log_level = 'INFO'
-work_dir = '../20200701'
+work_dir = '/u/student/2021/cs21resch15003/cs21mds14030/mca/SA-SSD/checkpoint_10Apr'
 load_from = None
 resume_from = None
 workflow = [('train', 1)]

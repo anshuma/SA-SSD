@@ -1,5 +1,0 @@
-# ninja log v5
-11	2651	1708630940000000000	/workspace/git/SA-SSD/mmdet/ops/iou3d/build/temp.linux-x86_64-3.8/src/iou3d_kernel.o	ce90156becbe92b
-16	15232	1708630997000000000	/workspace/git/SA-SSD/mmdet/ops/iou3d/build/temp.linux-x86_64-3.8/src/iou3d.o	312a3746895a7a7c
-34	2874	1708635198000000000	/workspace/git/SA-SSD/mmdet/ops/iou3d/build/temp.linux-x86_64-3.8/src/iou3d_kernel.o	d784b7fa03324daf
-33	18525	1708635214000000000	/workspace/git/SA-SSD/mmdet/ops/iou3d/build/temp.linux-x86_64-3.8/src/iou3d.o	3147d4902b0e4d3b

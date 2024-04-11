@@ -1,5 +1,5 @@
 import copy
-from collections import Sequence
+from collections.abc import Sequence
 
 import mmcv
 from mmcv.runner import obj_from_dict

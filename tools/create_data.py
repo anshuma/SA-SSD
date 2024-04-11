@@ -6,7 +6,7 @@ import sys
 from pathlib import Path
 
 # Assuming this script is in the root directory of your project
-root_dir = '/workspace/git/SA-SSD'
+root_dir = '/u/student/2021/cs21resch15003/cs21mds14030/mca/SA-SSD'
 sys.path.append(str(root_dir))
 from mmdet.core.bbox3d.geometry import remove_outside_points, points_in_rbbox, box_camera_to_lidar
 import tools.kitti_common as kitti
@@ -277,9 +277,9 @@ def create_groundtruth_database(data_path,
 
 
 if __name__ == '__main__':
-    create_kitti_info_file('/workspace/git/SA-SSD/data')
-    create_reduced_point_cloud('/workspace/git/SA-SSD/data')
+    create_kitti_info_file('/u/student/2021/cs21resch15003/cs21mds14030/mca/SA-SSD/data')
+    create_reduced_point_cloud('/u/student/2021/cs21resch15003/cs21mds14030/mca/SA-SSD/data')
 
-    create_groundtruth_database(data_path='/workspace/git/SA-SSD/data', \
-                                info_path='/workspace/git/SA-SSD/data/kitti_infos_trainval.pkl', \
-                                db_info_save_path='/workspace/git/SA-SSD/data/kitti_dbinfos_trainval.pkl')
+    create_groundtruth_database(data_path='/u/student/2021/cs21resch15003/cs21mds14030/mca/SA-SSD/data', \
+                                info_path='/u/student/2021/cs21resch15003/cs21mds14030/mca/SA-SSD/data/kitti_infos_trainval.pkl', \
+                                db_info_save_path='/u/student/2021/cs21resch15003/cs21mds14030/mca/SA-SSD/data/kitti_dbinfos_trainval.pkl')

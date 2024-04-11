@@ -1,7 +1,8 @@
 from __future__ import division
 import argparse
 import sys
-sys.path.append('/workspace/git/SA-SSD')
+#sys.path.append('/workspace/git/SA-SSD')
+sys.path.append('/u/student/2021/cs21resch15003/cs21mds14030/mca/SA-SSD')
 from mmcv.parallel import MMDataParallel, MMDistributedDataParallel
 from mmdet.datasets import build_dataloader
 from tools.env import get_root_logger, init_dist, set_random_seed
@@ -33,7 +34,7 @@ def parse_args():
         default='none',
         help='job launcher')
     parser.add_argument('--local_rank', type=int, default=0)
-    parser.add_argument('--max_ckpt_save_num', type=int, default=10)
+    parser.add_argument('--max_ckpt_save_num', type=int, default=40)
 
     args = parser.parse_args()
 

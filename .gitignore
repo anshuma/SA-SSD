@@ -24,3 +24,11 @@
 
 # Specific directory #
 saved_model_vehicle/
+tools/result-*
+20200701/
+mmdet/ops/iou3d/build/
+mmdet/ops/pointnet2/build/temp.linux-x86_64-3.7/
+mmdet/ops/points_op/build/temp.linux-x86_64-3.7/
+data/gt_database/
+data/testing/
+data/training/

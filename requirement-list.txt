@@ -1,0 +1,3 @@
+# packages in environment at /u/student/2021/cs21resch15003/miniconda3/envs/py3.7:
+#
+# Name                    Version                   Build  Channel

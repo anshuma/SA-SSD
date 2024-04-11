@@ -1,6 +1,7 @@
 import argparse
 import sys
-sys.path.append('/home/billyhe/SA-SSD')
+#sys.path.append('/home/billyhe/SA-SSD')
+sys.path.append('/u/student/2021/cs21resch15003/cs21mds14030/mca/SA-SSD')
 import torch
 import mmcv
 from mmcv.runner import load_checkpoint, parallel_test

@@ -69,7 +69,7 @@ def points_in_rbbox(points, rbbox, lidar=True):
         h_axis = 1
     rbbox_corners = center_to_corner_box3d(
         rbbox, origin=origin, axis=h_axis)
-    surfaces = corner_to_surfaces_3d(rbbox_corners)
+    surfaces = corner_to_surfaces_3d_v1(rbbox_corners)
     indices = points_in_convex_polygon_3d_jit_v2(points[:, :3], surfaces)
     return indices
 
@@ -93,6 +93,51 @@ def corner_to_surfaces_3d(corners):
         [corners[:, 3], corners[:, 2], corners[:, 6], corners[:, 7]],
     ]).transpose([2, 0, 1, 3])
     return surfaces
+
+
+@numba.jit(nopython=True)
+def corner_to_surfaces_3d_v2(corners):
+    """convert 3d box corners from corner function above
+    to surfaces that normal vectors all direct to internal.
+
+    Args:
+        corners (float array, [N, 8, 3]): 3d box corners.
+    Returns:
+        surfaces (float array, [N, 6, 4, 3]):
+    """
+    N = corners.shape[0]
+    surfaces = np.empty((N, 6, 4, 3))
+    for i in range(N):
+        surfaces[i, 0] = np.array([corners[i, 0], corners[i, 1], corners[i, 2], corners[i, 3]])
+        surfaces[i, 1] = np.array([corners[i, 7], corners[i, 6], corners[i, 5], corners[i, 4]])
+        surfaces[i, 2] = np.array([corners[i, 0], corners[i, 3], corners[i, 7], corners[i, 4]])
+        surfaces[i, 3] = np.array([corners[i, 1], corners[i, 5], corners[i, 6], corners[i, 2]])
+        surfaces[i, 4] = np.array([corners[i, 0], corners[i, 4], corners[i, 5], corners[i, 1]])
+        surfaces[i, 5] = np.array([corners[i, 3], corners[i, 2], corners[i, 6], corners[i, 7]])
+    return surfaces
+
+
+@numba.jit(nopython=True)
+def corner_to_surfaces_3d_v1(corners):
+    """convert 3d box corners from corner function above
+    to surfaces that normal vectors all direct to internal.
+
+    Args:
+        corners (float array, [N, 8, 3]): 3d box corners.
+    Returns:
+        surfaces (float array, [N, 6, 4, 3]):
+    """
+    N = corners.shape[0]
+    surfaces = np.empty((N, 6, 4, 3))
+    for i in range(N):
+        surfaces[i, 0, :] = corners[i, 0, :]
+        surfaces[i, 1, :] = corners[i, 1, :]
+        surfaces[i, 2, :] = corners[i, 2, :]
+        surfaces[i, 3, :] = corners[i, 3, :]
+        surfaces[i, 4, :] = corners[i, 4, :]
+        surfaces[i, 5, :] = corners[i, 5, :]
+    return surfaces
+
 
 @numba.njit
 def is_line_segment_intersection_jit(lines1, lines2):

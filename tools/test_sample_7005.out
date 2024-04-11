@@ -1,0 +1,19 @@
+SLURM_JOBID=7005
+SLURM_JOB_NODELIST=dgx-p100-01
+SLURM_NNODES=1
+SLURMTMPDIR=
+Date          	= Tue Apr  9 11:52:19 IST 2024
+Hostname      	= dgx-p100-01
+
+Number of Nodes Allocated  	= 1
+Number of Tasks Allocated  	= 4
+Number of Cores/Task Allocated = 1
+Working Directory = /u/student/2021/cs21resch15003/cs21mds14030/mca/SA-SSD/tools
+working directory = /u/student/2021/cs21resch15003/cs21mds14030/mca/SA-SSD/tools
+/u/student/2021/cs21resch15003/cs21mds14030/mca/SA-SSD/tools
+dgx-p100-01
+
+Traceback (most recent call last):
+  File "train.py", line 6, in <module>
+    from mmcv.parallel import MMDataParallel, MMDistributedDataParallel
+ModuleNotFoundError: No module named 'mmcv'

@@ -1,4 +1,13 @@
 import torch
+
+import os.path as osp
+import sys
+from pathlib import Path
+
+# Assuming this script is in the root directory of your project
+root_dir = '/u/student/2021/cs21resch15003/cs21mds14030/mca/SA-SSD'
+sys.path.append(str(root_dir))
+import mmdet
 import mmdet.ops.iou3d.iou3d_cuda as iou3d_cuda
 import math
 

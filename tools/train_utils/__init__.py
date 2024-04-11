@@ -155,19 +155,34 @@ def load_params_from_file(model, filename, to_cpu=False):
        if not os.path.isfile(filename):
            raise FileNotFoundError
 
+       #print('==> Loading parameters from checkpoint %s to %s' % (filename, 'CPU' if to_cpu else 'GPU'))
+       #loc_type = torch.device('cpu') if to_cpu else None
+       #checkpoint = torch.load(filename, map_location=loc_type)
+       #model_state_disk = checkpoint['model_state']
+
        print('==> Loading parameters from checkpoint %s to %s' % (filename, 'CPU' if to_cpu else 'GPU'))
        loc_type = torch.device('cpu') if to_cpu else None
        checkpoint = torch.load(filename, map_location=loc_type)
-       model_state_disk = checkpoint['model_state']
+       if isinstance(checkpoint, OrderedDict):
+           model_state_disk = checkpoint
+
 
        if 'version' in checkpoint:
            print('==> Checkpoint trained from version: %s' % checkpoint['version'])
+       
+       if "state_dict" in checkpoint:
+           model_state_disk = checkpoint['state_dict']
+       else:
+           model_state_disk = checkpoint['model_state']
 
        update_model_state = {}
        for key, val in model_state_disk.items():
            if key in model.state_dict() and model.state_dict()[key].shape == model_state_disk[key].shape:
                update_model_state[key] = val
                # logger.info('Update weight %s: %s' % (key, str(val.shape)))
+           elif key in model.module.state_dict() and model.module.state_dict()[key].shape == model_state_disk[key].shape:
+               new_key = "module." + key
+               update_model_state[new_key] = val
 
        state_dict = model.state_dict()
        state_dict.update(update_model_state)
