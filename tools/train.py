@@ -23,7 +23,7 @@ def parse_args():
     parser.add_argument(
         '--gpus',
         type=int,
-        default=2,
+        default=1,
         help='number of gpus to use '
              '(only applicable to non-distributed training)')
     parser.add_argument('--seed', type=int, default=0, help='random seed')
