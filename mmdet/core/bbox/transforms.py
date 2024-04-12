@@ -4,6 +4,8 @@ import torch
 from mmdet.datasets.kitti_utils import project_rect_to_image, project_velo_to_rect
 from mmdet.core.bbox3d.geometry import center_to_corner_box3d, limit_period
 import tools.kitti_common as kitti
+import numpy as np
+import os
 def rbbox3d2delta(anchors, boxes, means=[0, 0, 0, 0], stds=[1, 1, 1, 1]):
     xa, ya, za, wa, la, ha, ra = torch.split(anchors, 1, dim=-1)
     xg, yg, zg, wg, lg, hg, rg = torch.split(boxes, 1, dim=-1)
@@ -248,7 +250,7 @@ def kitti_bbox2results(boxes_lidar, scores, labels, meta, class_names=None):
     maxxy = np.max(corners_rgb, axis=1)
     box2d_rgb = np.concatenate([minxy, maxxy], axis=1)
     alphas = -np.arctan2(-boxes_lidar[:, 1], boxes_lidar[:, 0]) + boxes_lidar[:, 6]
-
+    template = '{} ' + ' '.join(['{:.4f}' for _ in range(15)]) + '\n'
     for i, (lb, score, box3d, box2d, alpha) in enumerate(zip(labels, scores, boxes_cam, box2d_rgb, alphas)):
         if box2d[0] > image_shape[1] or box2d[1] > image_shape[0]:
             continue
@@ -267,6 +269,12 @@ def kitti_bbox2results(boxes_lidar, scores, labels, meta, class_names=None):
         hehe["rotation_y"].append(box3d[6])
         hehe["score"].append(score)
         hehe['image_idx'].append(int(sample_id))
+
+        #of_path = os.path.join('/workspace/git/SA-SSD/test_anno/', '%06d.txt' % (int(sample_id)))
+        #with open(of_path, 'w+') as f:
+        #    for name, bbox, dim, loc, ry, score, alpha in zip(hehe['name'], hehe["bbox"], hehe["dimensions"], hehe["location"], hehe["rotation_y"], hehe["score"],hehe["alpha"]):
+        #        line = template.format(name, 0, 0, alpha, *bbox, *dim[[1,2,0]], *loc, ry, score)
+        #        f.write(line)
 
     try:
         hehe = {n: np.stack(v) for n, v in hehe.items()}
