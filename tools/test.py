@@ -1,9 +1,10 @@
 import argparse
 import sys
-sys.path.append('/home/billyhe/SA-SSD')
+sys.path.append('/workspace/git/SA-SSD')
 import torch
 import mmcv
-from mmcv.runner import load_checkpoint, parallel_test
+#from mmcv.runner import load_checkpoint, parallel_test
+from mmcv.runner import load_checkpoint
 from mmcv.parallel import scatter, collate, MMDataParallel
 from mmdet.core.evaluation.kitti_eval import get_official_eval_result
 from mmdet.core import results2json, coco_eval

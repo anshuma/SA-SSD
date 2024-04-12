@@ -33,7 +33,7 @@ def parse_args():
         default='none',
         help='job launcher')
     parser.add_argument('--local_rank', type=int, default=0)
-    parser.add_argument('--max_ckpt_save_num', type=int, default=10)
+    parser.add_argument('--max_ckpt_save_num', type=int, default=30)
 
     args = parser.parse_args()
 
