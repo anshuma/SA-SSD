@@ -1,0 +1,23 @@
+Distributed training: False
+Set random seed to 0
+**********************Start training**********************
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+epoch[1][20/1856]: lr: 0.003357, aux_loss_cls: 0.323995, aux_loss_reg: 1.017518, rpn_loc_loss: 7.349295, rpn_cls_loss: 14.809067, rpn_dir_loss: 0.172594, loss_cls: 48.224747, loss: 71.897217
+epoch[1][40/1856]: lr: 0.003433, aux_loss_cls: 0.388104, aux_loss_reg: 0.922506, rpn_loc_loss: 2.927692, rpn_cls_loss: 0.914177, rpn_dir_loss: 0.152244, loss_cls: 5.460541, loss: 10.765263
+epoch[1][60/1856]: lr: 0.003560, aux_loss_cls: 0.264418, aux_loss_reg: 0.858320, rpn_loc_loss: 1.852177, rpn_cls_loss: 0.656969, rpn_dir_loss: 0.139546, loss_cls: 0.741204, loss: 4.512634
+epoch[1][80/1856]: lr: 0.003736, aux_loss_cls: 0.149175, aux_loss_reg: 0.862754, rpn_loc_loss: 1.628496, rpn_cls_loss: 0.601044, rpn_dir_loss: 0.138888, loss_cls: 0.387125, loss: 3.767482
