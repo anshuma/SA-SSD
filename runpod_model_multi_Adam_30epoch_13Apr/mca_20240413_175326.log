@@ -1,0 +1,21 @@
+Distributed training: False
+Set random seed to 0
+**********************Start training**********************
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+finding looplift candidates
+epoch[1][20/1856]: lr: 0.000300, aux_loss_cls: 0.178009, aux_loss_reg: 0.788940, rpn_loc_loss: 5.436927, rpn_cls_loss: 28.204510, rpn_dir_loss: 0.162049, loss_cls: 37.453054, loss: 72.223491
+epoch[1][40/1856]: lr: 0.000300, aux_loss_cls: 0.115687, aux_loss_reg: 0.685732, rpn_loc_loss: 1.919154, rpn_cls_loss: 0.948447, rpn_dir_loss: 0.138560, loss_cls: 5.382423, loss: 9.190002
